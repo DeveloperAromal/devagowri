@@ -7,9 +7,9 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const accountSid = "ACa9b331c3964c172337d0ed8bd5626c0e";
-const authToken = "7ba9a1161f0d97933c3a3b0da520d652";
-const twilioPhone = 18504090217;
+const accountSid = "AC4b192f3b6b42d451f639540ad3c47c1d";
+const authToken = "ad58e481b4e74ea650fa8dc7de9a642f";
+const twilioPhone = 16206340511;
 
 const client = twilio(accountSid, authToken);
 
@@ -19,7 +19,7 @@ app.post("/send-otp", async (req, res) => {
     await client.messages.create({
       body: `🔐 Your OTP is: ${otp}`,
       from: twilioPhone,
-      to: `+919567270587`,
+      to: `+919495860071`,
     });
     res.send({ success: true });
   } catch (error) {
