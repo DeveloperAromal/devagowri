@@ -8,7 +8,7 @@ app.use(cors());
 app.use(express.json());
 
 const accountSid = "AC4b192f3b6b42d451f639540ad3c47c1d";
-const authToken = "ad58e481b4e74ea650fa8dc7de9a642f";
+const authToken = "d6d26605e56bb1b8241fdae62e75b5e1";
 const twilioPhone = 16206340511;
 
 const client = twilio(accountSid, authToken);
